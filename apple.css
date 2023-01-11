@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    outline: none;
+    color: snow;
+    background-color: gainsboro;
+}
+body{
+    overflow-x: hidden;
+}
+main h1,
+main p{
+    padding-bottom: 0.5rem;
+}
+div.first-sect{
+    background: url("mia-baker-15q2ZCDbQFU-unsplash.jpg") no-repeat fixed center/cover;
+    background-position-y: -200px;
+    height: 60vh;
+}
+header{
+    color: white;
+    background-color: #333;
+    padding: 0.6rem 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 1rem;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+header nav ul li:hover,
+header nav ul li:active{
+    opacity: 0.8;
+}
+nav ul li i{
+    font-size: 22px;
+}
+div main{
+    text-align: center;
+    margin: 0 3rem;
+    padding-top: 3rem;
+}
+.first-sect main{
+    padding-top: 6rem;
+}
+div main span a{
+    padding: 1rem;
+    text-decoration: none;
+}
+main span a:hover,
+main span a:active{
+    color: #333;
+}
+div.second-sect{
+    border-radius: 5px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+div.second-sect .grid-container{
+    margin: 1rem 2rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+a.btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(150, 4, 255);
+}
+.grid-container .box{
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    text-align: center;
+    margin: auto;
+ }
+.grid-container .box .img
+{
+    height: 20rem;
+    width: 100%;
+}
+.grid-container .box .content{
+    width: 100%;
+    height: 100%;
+}
+.grid-container .box .img img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   position: relative;
+   z-index: 1;
+}
+.grid-container .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    z-index: 33;
+    color: black;
+}
+.grid-container .box .content h4{
+    color: #333;
+    font-size: 2rem;
+}
+.grid-container .box .content p{
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+.grid-container .box .content .btn{
+    padding: 0.6rem 1rem;
+}
+div.third-sect{  
+    min-height: 70vh;
+    background-image: url("sung-jin-cho-NBVi9zj2egU-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 6rem 0;
+}
+div.carousel{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+div.carousel .carousel-images{
+    display: flex;
+    transform: translate(0);
+    transition: transform 0.7s;
+}
+div.carousel .carousel-images img{
+    height: 30rem;
+    border-radius: 5px;
+    width: fit-content;
+    overflow-x: hidden;
+}
+.carousel .carousel-btn{
+    background:orange;
+    border: 0;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0.6;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: absolute;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+.carousel .carousel-btn#prev{
+    left: 5px;
+}
+.carousel .carousel-btn#next{
+    right: 5px;
+}
+.carousel .carousel-btn:hover,
+.carousel .carousel-btn:active{
+    opacity: 0.8;
+}
+.carousel section{
+    position: absolute;
+    bottom: 1.5rem;
+    margin-left: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(239, 237, 236);
+}
+.carousel section button{
+    padding: 0.5rem;
+    border: 0;
+    background-color: rgb(240, 126, 33);
+    border-radius: 15px;
+    margin-bottom:0.6rem;
+    cursor: pointer;
+}
+.carousel section button:active{
+    background-color: rgba(249, 161, 90, 0.923);
+}
+div.footer{
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+
+}
+div.footer ul{
+    display: block;
+    list-style: none;
+}
+.back-to-top a button{
+    border: #333;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    border: 1.5px solid rgba(88, 88, 88, 0.642);
+}
+  /* RESPONSIVENESS */
+@media(max-width:768px){
+    
+}
+
+
+
+
+
